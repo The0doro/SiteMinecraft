@@ -1,0 +1,467 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/* Estilos gerais */
+.container {
+  background-color: #ccf5d8;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main-image main-image"
+    "footer footer";
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e7fced;
+}
+
+/* Estilos do cabeçalho */
+header {
+  position: sticky;
+  height: 18vh;
+  top: 0;
+  grid-area: header;
+  z-index: 100;
+}
+
+.rectangle1 {
+  position: absolute;
+  width: 100%;
+  height: 7vh;
+  background: #0dbf34;
+}
+
+.rectangle2 {
+  position: absolute;
+  width: 100%;
+  height: 11vh;
+  top: 60px;
+  background: #934600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+}
+
+.logo{
+  width: 26vw;
+  height: 10vh;
+}
+.logo img{
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.8));
+}
+
+/* Estilo dos botões */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#button1{
+  background: url(/Site/images/bloco.jpg);
+  background-size: cover;
+  background-position: 100%;
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  border: 2px solid #070707;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);
+}
+#button2{ 
+  background: url(/Site/images/skeleton1.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  border: 2px solid #070707;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);
+}
+#button3{
+  background: url(/Site/images/expl.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  border: 2px solid #070707;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);
+}
+#button4{
+  background: url(/Site/images/cobble.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  border: 2px solid #070707;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);
+}
+
+#button5{
+  background: url(/Site/images/mold.jpg);
+  background-size: cover ;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  border: 2px solid #070707;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);
+}
+
+/* Efeito dos botões */
+#button1::after,                              
+#button2::after,
+#button3::after,
+#button4::after,
+#button5::after{                                  
+  box-shadow:0 5px 15px 0 rgba(0, 0, 0, 0.3);/*Sombra após o objeto "saltar" */
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); 
+  z-index: -1;                                    /* As camadas, muda o posicionamento do objeto sobre as camadas dele*/
+}
+
+#button1:hover{                                          /*É o passar do mouse */
+  background: url(/Site/images/craft.jpg);
+  background-size: cover;
+  transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transform:scale(1.25,1.25);                     /*Aumenta a escala do objeto */
+}
+#button2:hover{                                        
+  background: url(/Site/images/skeleton.png);
+  background-size: cover ;
+  background-position: center;
+  transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transform:scale(1.25,1.25);                    
+}
+#button3:hover{            
+  background: url(/Site/images/nether.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);                 
+  transform:scale(1.25,1.25);                    
+}
+#button4:hover{
+  background: url(/Site/images/castelo.jpg);
+  background-size: cover ;
+  background-position: center;     
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);              
+  transform:scale(1.25,1.25);                   
+}
+#button5:hover{             
+  background: url(/Site/images/itens.jpg);
+  background-size: cover ;
+  background-position: center;  
+  transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);                          
+  transform:scale(1.25,1.25);                    
+}
+
+
+
+/* Estilos da imagem centralizada */
+.centered-image {
+  position: absolute;
+  width: 45vw;
+  height: 55vh;
+  left: calc(50% - 45vw / 2 - 0.5px);
+  top: 276px;
+  background: url(/Site/images/FotoP.png);
+  background-size: cover;
+  border: 3.5px solid #000000;
+  box-shadow: inset 0px 4px 200px 10px #000000;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.8));
+  box-sizing: border-box;
+}
+a#scroll{
+  text-align: bottom;
+  position: absolute;
+  height: 3.5vh;
+  width: 7.0vw;
+  border: 2px solid #ffff;
+  margin: auto;
+  left: 10px;
+  right: 0;
+  bottom: 40px;
+}
+a#scroll:before{
+  position: absolute;
+  content: "";
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+a#scroll:after{
+  position: absolute;
+  content: "VEJA MAIS";
+  width: 6vw;
+  display: block;
+  width: 10em;
+  text-align: bottom;
+  font-size: 1.2em;
+  color: white;
+  letter-spacing: 3px;
+  font-weight: 500;
+  left: 3px;
+  top: 3px;
+  bottom: 0;
+}
+a#scroll:hover{ 
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);              
+  transform:scale(1.10,1.10);
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.8));
+}
+
+.image-text {
+  color: #fff;
+  text-align: center;
+  max-width: 80%; /* Ajuste a largura máxima conforme necessário */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-text h1 {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.image-text p {
+  text-align: left;
+  margin-bottom: 70px;
+  font-size: 18px;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #000;
+}
+
+section {
+  overflow: hidden;
+  min-height: 100vh;
+  background: url(/Site/images/mine.jpg);
+  display: grid;
+  grid-template-areas:
+    "head head"
+    "main main"
+    "footer footer";
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  text-shadow:  0vw 1vw 1vw rgba(0, 0, 0, 0.8);
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #000;
+  }
+.section-content{  
+  grid-area: head;
+  position: flex;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.rectangle3 {
+  width: 100vw;
+  height: 50vh;
+  display:grid;
+  grid-area: main;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  text-align: bottom;
+}
+
+/* Ajeitando o sliderzin */
+.slider-wrapper{
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.slider{
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+  border: 5px solid #000;
+  overflow-x: hidden;
+}
+
+.slider img{
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  overflow-x: hidden;
+}
+
+.slider-nav{
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.slider-nav a{
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+  opacity: 1;
+}
+
+  /* Estilos do rodapé */
+.footer-container {
+  position: absolute;
+  width: 33vw;
+  display: grid;
+  flex-direction: column;
+  align-items: bottom;
+  grid-area: footer;
+  z-index: 9999;
+  right: 33vw;
+}
+
+
+.footer1 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  background: #0dbf34;
+  border: 2px solid #000000;
+  border-bottom: 0px;
+  position: relative;
+  z-index: 2;
+}
+
+.footer2 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 90px;
+  background: #934600;
+  border: 2px solid #000000;
+  border-top: 0px;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 1.5));
+}
+.contato ul {
+  box-sizing: border-box;
+  position: absolute;
+  list-style-type: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.contato ul li {
+  font-size: 15px;
+  text-align: left;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.midia-social {
+  text-align: right;
+}
+
+.midia-social a {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.midia-social img {
+  box-sizing: border-box;
+  width: 25px;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+/* Media queries para responsividade */
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "main-image"
+      "footer1"
+      "footer2";
+    grid-template-columns: 1fr;
+  }
+  .centered-image {
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    transform: none;
+  }
+  a#scroll{
+    font-size: 12px;
+  }
+  .footer-container {
+    width: 100%;
+    height: 80px;
+    left: 0;
+    top: auto;
+    bottom: 0;
+  }
+
+  .footer2 {
+    width: 100%;
+    height: 80px;
+    left: 0;
+    top: auto;
+    bottom: 0;
+  }
+
+  .image-text {
+    max-width: 100%;
+  }
+}

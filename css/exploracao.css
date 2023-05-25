@@ -1,0 +1,300 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+.container {
+  background-color: #e7fced;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main-image main-image"
+    "footer footer";
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e7fced;
+}
+
+
+/* Estilos do cabeçalho */
+header {
+  position: relative;
+  height: 18vh;
+  grid-area: header;
+}
+
+
+
+.rectangle1 {
+  position: absolute;
+  width: 100%;
+  height: 7vh;
+  background: #0dbf34;
+}
+
+.rectangle2 {
+  position: absolute;
+  width: 100%;
+  height: 11vh;
+  top: 60px;
+  background: #934600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+}
+
+.logo{
+  width: 26vw;
+  height: 10vh;
+}
+.logo img{
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.8));
+}
+
+/* Estilo dos botões */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#button1{
+  background: url(/Site/images/bloco.jpg);
+  background-size: cover;
+  background-position: 100%;
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  border: 2px solid #070707;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);
+}
+#button2{ 
+  background: url(/Site/images/skeleton1.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  border: 2px solid #070707;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);
+}
+#button3{
+  background: url(/Site/images/expl.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  border: 2px solid #070707;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);
+}
+#button4{
+  background: url(/Site/images/cobble.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  border: 2px solid #070707;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);
+}
+#button5{
+  background: url(/Site/images/mold.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  border: 2px solid #070707;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);
+}
+
+/* Efeito dos botões */
+#button1::after,                              
+#button2::after,
+#button3::after,
+#button4::after,
+#button5::after{                                  
+  box-shadow:0 5px 15px 0 rgba(0, 0, 0, 0.3);/*Sombra após o objeto "saltar" */
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); 
+  z-index: -1;                                    /* As camadas, muda o posicionamento do objeto sobre as camadas dele*/
+}
+
+#button1:hover{                                          /*É o passar do mouse */
+  background: url(/Site/images/craft.jpg);
+  background-size: cover;
+  transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transform:scale(1.25,1.25);                     /*Aumenta a escala do objeto */
+}
+#button2:hover{                                        
+  background: url(/Site/images/skeleton.png);
+  background-size: cover ;
+  background-position: center;
+  transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transform:scale(1.25,1.25);                    
+}
+#button3:hover{            
+  background: url(/Site/images/nether.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);                 
+  transform:scale(1.25,1.25);                    
+}
+#button4:hover{
+  background: url(/Site/images/castelo.jpg);
+  background-size: cover ;
+  background-position: center;     
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);              
+  transform:scale(1.25,1.25);                   
+}
+#button5:hover{             
+  background: url(/Site/images/itens.jpg);
+  background-size: cover ;
+  background-position: center;  
+  transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);                          
+  transform:scale(1.25,1.25);                    
+}
+
+/* Rodapé*/
+
+.footer-container {
+  position: absolute;
+  width: 33vw;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: footer;
+  right: 33vw;
+  background-color: red;
+}
+
+.footer1 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  background: #0dbf34;
+  border: 2px solid #000000;
+  border-bottom: 0px;
+  position: relative;
+  z-index: 2;
+}
+
+.footer2 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 90px;
+  background: #934600;
+  border: 2px solid #000000;
+  border-top: 0px;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 1.5));
+}
+
+.contato ul {
+  box-sizing: border-box;
+  position: absolute;
+  list-style-type: none;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.contato ul li {
+  font-size: 15px;
+  text-align: left;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.midia-social {
+  text-align: right;
+}
+
+.midia-social a {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.midia-social img {
+  box-sizing: border-box;
+  width: 25px;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+/* Media queries para responsividade */
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "main-image"
+      "footer1"
+      "footer2";
+    grid-template-columns: 1fr;
+  }
+  .centered-image {
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    transform: none;
+  }
+
+  footer {
+    width: 100%;
+    height: 80px;
+    left: 0;
+    top: auto;
+    bottom: 0;
+  }
+
+  .footer2 {
+    width: 100%;
+    height: 80px;
+    left: 0;
+    top: auto;
+    bottom: 0;
+  }
+
+  .image-text {
+    max-width: 100%;
+  }
+}
