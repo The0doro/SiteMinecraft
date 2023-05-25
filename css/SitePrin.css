@@ -85,7 +85,7 @@ nav ul li a {
 }
 
 #button1{
-  background: url(/Site/images/bloco.jpg);
+  background: url(Site/images/bloco.jpg);
   background-size: cover;
   background-position: 100%;
   display: flex;
@@ -97,7 +97,7 @@ nav ul li a {
   box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);
 }
 #button2{ 
-  background: url(/Site/images/skeleton1.jpg);
+  background: url(Site/images/skeleton1.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -109,7 +109,7 @@ nav ul li a {
   box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);
 }
 #button3{
-  background: url(/Site/images/expl.jpg);
+  background: url(Site/images/expl.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -121,7 +121,7 @@ nav ul li a {
   box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);
 }
 #button4{
-  background: url(/Site/images/cobble.jpg);
+  background: url(Site/images/cobble.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -134,7 +134,7 @@ nav ul li a {
 }
 
 #button5{
-  background: url(/Site/images/mold.jpg);
+  background: url(Site/images/mold.jpg);
   background-size: cover ;
   background-position: center;
   display: flex;
@@ -158,34 +158,34 @@ nav ul li a {
 }
 
 #button1:hover{                                          /*É o passar do mouse */
-  background: url(/Site/images/craft.jpg);
+  background: url(Site/images/craft.jpg);
   background-size: cover;
   transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
   transform:scale(1.25,1.25);                     /*Aumenta a escala do objeto */
 }
 #button2:hover{                                        
-  background: url(/Site/images/skeleton.png);
+  background: url(Site/images/skeleton.png);
   background-size: cover ;
   background-position: center;
   transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
   transform:scale(1.25,1.25);                    
 }
 #button3:hover{            
-  background: url(/Site/images/nether.jpg);
+  background: url(Site/images/nether.jpg);
   background-size: cover;
   background-position: center;
   transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);                 
   transform:scale(1.25,1.25);                    
 }
 #button4:hover{
-  background: url(/Site/images/castelo.jpg);
+  background: url(Site/images/castelo.jpg);
   background-size: cover ;
   background-position: center;     
   transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);              
   transform:scale(1.25,1.25);                   
 }
 #button5:hover{             
-  background: url(/Site/images/itens.jpg);
+  background: url(Site/images/itens.jpg);
   background-size: cover ;
   background-position: center;  
   transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);                          
@@ -201,7 +201,7 @@ nav ul li a {
   height: 55vh;
   left: calc(50% - 45vw / 2 - 0.5px);
   top: 276px;
-  background: url(/Site/images/FotoP.png);
+  background: url(Site/images/FotoP.png);
   background-size: cover;
   border: 3.5px solid #000000;
   box-shadow: inset 0px 4px 200px 10px #000000;
@@ -274,7 +274,7 @@ a#scroll:hover{
 section {
   overflow: hidden;
   min-height: 100vh;
-  background: url(/Site/images/mine.jpg);
+  background: url(Site/images/mine.jpg);
   display: grid;
   grid-template-areas:
     "head head"
